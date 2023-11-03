@@ -1,0 +1,32 @@
+<!--Wilson Toy-->
+<!--CSC 193A: Web Programming-->
+<!--Assignment 5-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+        <script src="fancifymytext.js"></script>
+	</head>
+	<body>
+		<h1>Fancify my Text</h1>
+		
+		<!-- Your UI controls go here -->
+        <fieldset label="Text">
+            <textarea id="textArea" rows="4" cols="30">
+                    </textarea>
+        </fieldset label="Fancify">
+        <fieldset>
+            <button type="button" value="biggerButton" onclick="setBiggerButton('textArea', 20)">Bigger!</button>
+            <button type="button" value="mooButton" onclick="setMooButton('textArea')">Moo</button>
+            <input type="radio" id="fancyRadioButton" name="radioButton"
+                onclick="setFancySchmancy('textArea', 'blue', 'bold', 'underline')">
+            <label for="fancyRadioButton">FancySchmancy</label>
+            <input type="radio" id="boringRadioButton" name="radioButton" onclick="setBoringBetty('textArea')">
+            <label for="boringRadioButton">BoringBetty</label>
+        </fieldset>
+		
+	</body>
+</html>
